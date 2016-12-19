@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:minHeight="@dimen/list_item_height"
+    android:background="#F5F5F5"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/Images_view_indetail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/detail_act_height"
+        android:scaleType="fitXY"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView
+        android:id="@+id/truck_name_indetail"
+        android:layout_below="@id/Images_view_indetail"
+        android:layout_width= "match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:paddingTop="40dp"
+        android:layout_alignParentLeft="true"
+        tools:text="truck_name"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textAppearance="?android:textAppearanceMedium"
+        />
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Images_view_indetail"
+        android:paddingTop="38dp"
+        android:id="@+id/ratingBar"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:id="@+id/truck_category_indetail"
+        android:layout_below="@id/truck_name_indetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:paddingTop="24dp"
+        android:layout_alignParentLeft="true"
+        tools:text="truck_category"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="10sp"
+        android:textAppearance="?android:textAppearanceMedium"
+        />
+    <GridView
+        android:id="@+id/menu_list"
+        android:background="#FFFFFF"
+        android:columnWidth="90dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="2dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_below="@id/truck_category_indetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.example.chekwon.projectt.FollowingActivity">
+    </GridView>
+
+
+</RelativeLayout>

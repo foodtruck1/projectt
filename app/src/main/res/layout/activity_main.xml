@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical"
+   tools:context="com.example.chekwon.projectt.MainActivity">
+
+    <TextView
+        android:id="@+id/nearby"
+        style="@style/CategoryStyle"
+
+        android:text="@string/category_nearby"
+        />
+
+    <TextView
+        android:id="@+id/category"
+        style="@style/CategoryStyle"
+
+        android:text="@string/category_category" />
+
+    <TextView
+        android:id="@+id/name"
+        style="@style/CategoryStyle"
+
+        android:text="@string/category_search" />
+
+    <TextView
+        android:id="@+id/follow"
+        style="@style/CategoryStyle"
+
+        android:text="@string/category_following" />
+
+    <TextView
+        android:id="@+id/settings"
+        style="@style/CategoryStyle"
+
+        android:text="@string/category_settings" />
+
+</LinearLayout>
